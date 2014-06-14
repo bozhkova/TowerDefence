@@ -5,39 +5,39 @@
 var Minion = dejavu.AbstractClass.declare({
     $name: 'Minion',
     $extends: GameObject,
-    _speed: null,
-    _healthPoints: null,
-    _reward: null,
+    __speed: null,
+    __healthPoints: null,
+    __reward: null,
 
     initialize: function (x, y, speed, healthPoints, reward) {
         this.$super(x, y);
-        this.__setSpeed(speed);
-        this.__setHealthPoints(healthPoints);
-        this.__setReward(reward);
+        this._setSpeed(speed);
+        this._setHealthPoints(healthPoints);
+        this._setReward(reward);
     },
 
-    __setSpeed: function (speed) {
-        this._speed = speed;
+    _setSpeed: function (speed) {
+        this.__speed = speed;
         
         return this;
     },
 
     getSpeed: function () {
-        return this._speed;
+        return this.__speed;
     },
 
-    __setHealthPoints: function (healthPoints) {
-        this._healthPoints = healthPoints;
+    _setHealthPoints: function (healthPoints) {
+        this.__healthPoints = healthPoints;
 
         return this;
     },
 
     getHealthPoints: function () {
-        return this._healthPoints;
+        return this.__healthPoints;
     },
 
-    __setReward: function (reward) {
-        this._reward = reward;
+    _setReward: function (reward) {
+        this.__reward = reward;
 
         return this;
     },

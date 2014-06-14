@@ -3,8 +3,8 @@
 
 var GameObject = dejavu.AbstractClass.declare({
     $name: 'GameObject',
-    _x: null,
-    _y: null,
+    __x: null,
+    __y: null,
 
     initialize: function (x, y) {
         this.setX(x);
@@ -12,22 +12,22 @@ var GameObject = dejavu.AbstractClass.declare({
     },
 
     setX: function (x) {
-        this._x = x;
+        this.__x = x;
 
         return this;
     },
     
     getX: function () {
-        return this._x;
+        return this.__x;
     },
 
     setY: function (y) {
-        this._y = y;
+        this.__y = y;
 
         return this;
     },
 
     getY: function () {
-        return this._y;
+        return this.__y;
     }
 })

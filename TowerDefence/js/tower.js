@@ -4,70 +4,70 @@
 var Tower = dejavu.AbstractClass.declare({
     $name: 'Tower',
     $extends: GameObject,
-    _rangeRadius: null,
-    _damagе: null,
-    _price: null,
-    _range: null,
-    _fireRate: null,
-    _affectedRadius: null,
+    __rangeRadius: null,
+    __damagе: null,
+    __price: null,
+    __range: null,
+    __fireRate: null,
+    __affectedRadius: null,
 
     initialize: function (x, y, damage, price, range, fireRate, affectedRadius) {
         this.$super(x, y);
-        this.__setDamage(damage);
-        this.__setPrice(price);
-        this.__setRange(range);
-        this.__setFireRate(fireRate);
-        this.__setAffectedRadius(affectedRadius);
+        this._setDamage(damage);
+        this._setPrice(price);
+        this._setRange(range);
+        this._setFireRate(fireRate);
+        this._setAffectedRadius(affectedRadius);
     },
 
-    __setDamage: function (damage) {
-        this._damagе = damage;
+    _setDamage: function (damage) {
+        this.__damagе = damage;
 
         return this;
     },
 
     getDamage: function () {
-        return this._damagе
+        return this.__damagе
     },
 
-    __setPrice: function (price) {
-        this._price = price;
+    _setPrice: function (price) {
+        this.__price = price;
 
         return this;
     },
 
     getPrice: function () {
-        return this._price;
+        return this.__price;
     },
 
-    __setRange: function (range) {
-        this._range = range;
+    _setRange: function (range) {
+        this.__range = range;
 
         return this;
     },
 
     getRange: function () {
-        return this._range;
+        return this.__range;
     },
 
-    __setFireRate: function (fireRate) {
-        this._fireRate = fireRate;
+    _setFireRate: function (fireRate) {
+        this.__fireRate = fireRate;
 
         return this;
     },
 
     getFireRate: function () {
-        return this._fireRate;
+        return this.__fireRate;
     },
 
-    __setAffectedRadius: function (affectedRadius) {
-        this._affectedRadius = affectedRadius;
+    _setAffectedRadius: function (affectedRadius) {
+        this.__affectedRadius = affectedRadius;
 
         return this;
     },
 
     getAffectedRadius: function () {
-        return this._affectedRadius;
+        return this.__affectedRadius;
     },
 
     $abstracts: {
