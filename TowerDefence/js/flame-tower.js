@@ -2,14 +2,14 @@
 /// <reference path="tower.js" />
 'use strict';
 
-var CannonTower = dejavu.Class.declare({
-    $name: 'CannonTower',
+var FlameTower = dejavu.Class.declare({
+    $name: 'FlameTower',
     $extends: Tower,
     $constants: {
-        DAMAGE: 40,
-        PRICE: 1200,
-        RANGE: 150,
-        FIRE_RATE: 1,
+        DAMAGE: 150,
+        PRICE: 15,
+        RANGE: 5,
+        FIRE_RATE: 150,
         AFFECTED_RADIUS: 4
     },
 
@@ -20,4 +20,4 @@ var CannonTower = dejavu.Class.declare({
     attack: function (position) {
         throw 'This method is not implemented';
     }
-});
+})

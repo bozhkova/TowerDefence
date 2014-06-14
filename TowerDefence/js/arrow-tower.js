@@ -4,7 +4,7 @@
 
 var ArrowTower = dejavu.Class.declare({
     $name: 'ArrowTower',
-    $extends: 'Tower',
+    $extends: Tower,
     $constants: {
         DAMAGE: 20,
         PRICE: 1000,

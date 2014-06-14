@@ -13,4 +13,4 @@ var Peasant = dejavu.Class.declare({
     initialize: function (x, y) {
         this.$super(x, y, this.$static.SPEED, this.$static.HEALTH_POINTS, this.$static.REWARD);
     }
-})
+});
