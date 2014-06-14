@@ -3,6 +3,7 @@
 
 var GameObject = dejavu.AbstractClass.declare({
     $name: 'GameObject',
+    $implements: [IRendable],
     __x: null,
     __y: null,
 
@@ -29,5 +30,9 @@ var GameObject = dejavu.AbstractClass.declare({
 
     getY: function () {
         return this.__y;
+    },
+
+    render: function(layer) {
+        console.log('rendered');
     }
 })
