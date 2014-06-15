@@ -12,7 +12,31 @@ var GameField = dejavu.Class.declare({
         this.$super(x, y);
         this.setWidth(__width);
         this.setHeight(__height);
-        this.setPath([]);
+		if (!path) {
+			path = [ 
+			{x: 16, y: 0},
+			{x: 16, y: 3},
+			{x: 8,  y: 3},
+			{x: 8,  y: 0},
+			{x: 5,  y: 0},
+			{x: 5,  y: 2},
+			{x: 6,  y: 2},
+			{x: 6,  y: 4},
+			{x: 5,  y: 4},
+			{x: 5,  y: 8},
+			{x: 7,  y: 8},	
+			{x: 7,  y: 11},
+			{x: 16, y: 11},
+			{x: 16, y: 6},		
+			{x: 11, y: 6},
+			{x: 11, y: 15},
+			{x: 14, y: 15},	
+			{x: 14, y: 18},
+			{x: 7,  y: 18},
+			{x: 7,  y: 19}			 
+			]
+		}
+        this.setPath(path);
         this.setMinions([]);
         this.setTowers([]);
     },
