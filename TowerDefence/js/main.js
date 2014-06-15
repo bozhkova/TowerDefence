@@ -1,10 +1,10 @@
 (function () {
-    /// <reference path="peasant.js" />
+    /// <reference path="enemy.js" />
     'use strict';
 
     var gameEngine = GameEngine.getInstance();
     gameEngine.run();
 
-    var peasant = new Peasant(5, 5);
+    var enemy = new Enemy(16, 0);
 
 })();

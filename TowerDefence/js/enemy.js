@@ -1,8 +1,8 @@
 ﻿/// <reference path="minion.js" />
 'use strict';
 
-var Peasant = dejavu.Class.declare({
-    $name: 'Peasant',
+var Enemy = dejavu.Class.declare({
+    $name: 'Enemy',
     $extends: Minion,
     $constants: {
         SPEED: 5,
