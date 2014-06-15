@@ -9,8 +9,8 @@ var GameEngine = dejavu.Class.declare({
 
     __initialize: function () {
         this.__stage = new Kinetic.Stage({
-            width: 960,
-            height: 600,
+            width: 1000,
+            height: 640,
             container: 'game-frame'
         });
     },
@@ -21,15 +21,15 @@ var GameEngine = dejavu.Class.declare({
 
     __renderFrame: function () {
         this.__renderMenus();
-        this.__renderField();
+        // this.__renderField();
     },
 
     __renderMenus: function () {
         var layer = new Kinetic.Layer();
-        var menuX = 600;
+        var menuX = 640;
         var menuY = 0;
         var menuWidth = 360;
-        var menuHeight = 600;
+        var menuHeight = 640;
 
         var buttonWidth = 100;
         var buttonHeight = 100;

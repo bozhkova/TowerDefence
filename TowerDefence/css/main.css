@@ -1,3 +1,16 @@
+#game-frame, svg {
+	position: absolute;
+}
+
+svg {
+	z-index: 1;
+	margin: 1px;
+}
+
+#game-frame {
+	z-index: 2;
+}
+
 canvas {
     border: 1px solid black !important;
 }
