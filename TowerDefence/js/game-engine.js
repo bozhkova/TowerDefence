@@ -26,9 +26,9 @@ var GameEngine = dejavu.Class.declare({
 
     __renderMenus: function () {
         var layer = new Kinetic.Layer();
-        var menuX = 700;
+        var menuX = 600;
         var menuY = 0;
-        var menuWidth = 260;
+        var menuWidth = 360;
         var menuHeight = 600;
 
         var buttonWidth = 100;
@@ -102,4 +102,4 @@ var GameEngine = dejavu.Class.declare({
             return this.$static.__instance;
         }
     }
-});
+}); 
